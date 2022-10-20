@@ -15,7 +15,7 @@ public class StudentModel {
     private int id;
     private String name;
     private int rollno;
-    private int admno;
+    private String admno;
     private String college;
     private String department;
     private String bloodgroup;
@@ -28,7 +28,7 @@ public class StudentModel {
     public StudentModel() {
     }
 
-    public StudentModel(int id, String name, int rollno, int admno, String college, String department, String bloodgroup, String dob, String parentname, String email, String guardianname, String address) {
+    public StudentModel(int id, String name, int rollno, String admno, String college, String department, String bloodgroup, String dob, String parentname, String email, String guardianname, String address) {
         this.id = id;
         this.name = name;
         this.rollno = rollno;
@@ -67,11 +67,11 @@ public class StudentModel {
         this.rollno = rollno;
     }
 
-    public int getAdmno() {
+    public String getAdmno() {
         return admno;
     }
 
-    public void setAdmno(int admno) {
+    public void setAdmno(String admno) {
         this.admno = admno;
     }
 
